@@ -31,6 +31,6 @@ def main():
                 break
         results[x_temp - 1][y_temp - 1] += 1
 
-    print(tabulate(results, tablefmt='psql', colalign=('center', 'center')))
+    print(tabulate(results, headers=X, tablefmt='psql', colalign=('center', 'center'), showindex=X))
 
 main()
